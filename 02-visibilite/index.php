@@ -1,8 +1,11 @@
 <?php
 
-require_once 'cat.php';
+require_once 'Cat.php';
 
 $cat = new Cat();
 
-
-$cat->name = 'Bianca';
+$cat
+    ->setName('Bianca')
+    ->setType('Chat de gouttière')
+;
+echo $cat->getName();
